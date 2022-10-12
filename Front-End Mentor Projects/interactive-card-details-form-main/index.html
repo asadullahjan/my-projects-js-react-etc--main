@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins&family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <title>card details form</title>
+
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <section class="cards-section">
+        <picture>
+          <source
+            media="(min-width: 1100px)"
+            srcset="images/bg-main-desktop.png"
+          />
+          <source media="(min-width: 480px)" srcset="images/bg-main-mobile.png" />
+          <img
+            class="background-img"
+            src="images/bg-main-mobile.png"
+            alt="background-image"
+          />
+        </picture>
+        <div class="back-card">
+          <img
+            src="images/bg-card-back.png"
+            alt="card-back-image"
+          />
+          <p id="card-cvc" class="opacity">000</p>
+        </div>
+        <div class="front-card">
+          <img
+            src="images/bg-card-front.png"
+            alt="card-front-image"
+          /> 
+          <p id="card-number"  class="opacity" >0000 0000 0000 0000</p>
+          <p id="card-holder"  class="opacity">cardholder name</p>
+          <p id="card-expiry"  class="opacity">00/00</p>
+          <img id="card-logo" src="./images/card-logo.svg" alt="card-logo">
+        </div>
+          
+      </section>
+      <section class="input-section">
+        <div  class='input-div'>
+          <form action="" onsubmit="onSubmitButtonClick()">
+          <div class="form-div">
+            <label for="name-label">CARDHOLDER NAME</label><br>
+            <input class="form-input" type="text" name="name-label" id="name-label" placeholder="e.g. Asadullah Jan" required/>
+          </div>
+          <div class="form-div">
+            <label for="number-label">CARD NUMBER</label>
+            <input pattern="([\d\s]{19,})" class="form-input" type="text" name="number-label" id="number-label" placeholder="e.g. 1234 5678 9123 0000" required maxlength="28" />
+          </div>
+          <div class="form-div">
+              <label class="exp-date-label" for="EXP-date">EXP.DAT(MM/YY)</label>
+              <label class="cvc-label" for="cvc">CVC</label>
+            <div class="date-cvc-form">
+              <input type="text" name="month" id="EXP-date-M" placeholder="MM" maxlength="2" required/>
+              <input type="text" name="year" id="EXP-date-Y" placeholder="YY" maxlength="4" required/>
+              <input type="text" name="cvc" id="cvc" placeholder="e.g. 123" maxlength="3" required/>
+            </div>
+          </div>
+          <div class="form-div">
+            <input type="submit" class="form-input" placeholder="Submit" style="border: none;"/>
+          </div>
+        </form>
+        </div>
+      </section>
+    </div>
+    
+  </body>
+</html>
+
+<!-- 
+
+<div class="container">
+  <img class="background-image" src="./images/bg-main-desktop.png" alt="background Image" >
+
+  <div id="card-front-div">    
+    <img id="card-front" src="./images/bg-card-front.png" alt="card-front">
+    <p id="card-number">0000 0000 0000 0000</p>
+    <p id="card-holder">cardHolder Name</p>
+    <p id="card-expiry">00/00</p>
+    <img id="card-logo" src="./images/card-logo.svg" alt="card-logo">
+  </div>
+  <div id="card-back-div">
+    <img id="card-back" src="./images/bg-card-back.png" alt="card-back">
+    <p id="card-cvc">000</p>
+  </div>
+  
+
+  <div class="data-input">
+    <form action="">
+      <label for="cardholder">CARDHOLDER NAME</label><br>
+      <input  class="input" type="text" name="cardholder" id="cardholder" placeholder="e.g. Asadullah Jan" required><br>
+      <label for="cardnumber">CARD NUMBER</label><br>
+      <input class="input" type="input" name="cardnumber" id="cardnumber" placeholder="e.g. 1234 5678 9123 0000" required maxlength="19"><br> 
+      <label  for="expirydate">EXPIRY DATE(MM/YY)</label>
+      <label style="padding-left: 15%" for="cvc">CVC</label><br>
+      <input class="input"type="number" name="expirydate" id="expirydateMM" placeholder="MM" maxlength="2"  required>
+      <input class="input"type="number" name="expirydate" id="expirydateYY" placeholder="YY" maxlength="4"  required>
+      <input class="input" type="number" name="cvc" id="cvc" placeholder="e.g.123" maxlength="3"  required><br>
+      <br>
+      <button class="submit-button" onclick="onCountinueButtonClick(event)" >Countinue</button>
+    </form>
+    
+  </div>
+</div> -->

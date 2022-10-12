@@ -1,0 +1,297 @@
+* {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.opacity {
+  opacity: 0.3;
+}
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 40vh;
+}
+
+.back-card {
+  position: absolute;
+  width: 100vw;
+  top: 10vh;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 10px 0 20px;
+  font-size: 5vw;
+  overflow: hidden;
+}
+.back-card img {
+  width: 100%;
+}
+#card-cvc {
+  position: absolute;
+  top: 45%;
+  margin-left: 60%;
+}
+
+.front-card {
+  position: absolute;
+  width: 100vw;
+  top: 27vh;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 25px 0 5px;
+  font-size: 5vw;
+  overflow: hidden;
+}
+
+.front-card img {
+  width: 100%;
+}
+
+#card-number {
+  position: absolute;
+  font-size: 7vw;
+  top: 40%;
+}
+
+#card-holder {
+  position: absolute;
+  top: 82%;
+  margin-right: 45%;
+}
+
+#card-expiry {
+  position: absolute;
+  top: 84%;
+  margin-left: 68%;
+}
+
+#card-logo {
+  position: absolute;
+  width: 20%;
+  top: 10%;
+  margin-right: 65%;
+}
+
+.input-div {
+  width: 80%;
+  margin: 160vw auto;
+  padding: 1rem 1rem;
+}
+
+.form-div {
+  display: block;
+  width: 100%;
+  margin: 0.5rem auto;
+}
+
+input:focus{
+  outline: none;
+  border: none;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+input{
+  border-radius: 5px;
+  border: 1px gray solid;
+}
+
+.form-input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 15px;
+
+}
+
+.cvc-label {
+  float: right;
+}
+
+.date-cvc-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.date-cvc-form input {
+  width: 30%;
+  padding: 15px;
+  margin: 5px 0 15px;
+}
+
+@media screen and (min-width: 400px) {
+  .back-card {
+    position: absolute;
+    width: 100vw;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 10px 0 20px;
+  }
+
+  .back-card img {
+    width: 370px;
+  }
+
+  #card-cvc {
+    position: absolute;
+    font-size: 25px;
+    top: 43%;
+    margin: 0 auto;
+    padding-left: 250px;
+  }
+
+  .front-card {
+    position: absolute;
+    width: 100vw;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 25px 0 5px;
+  }
+
+  .front-card img {
+    width: 370px;
+  }
+
+  #card-number {
+    position: absolute;
+    font-size: 30px;
+    top: 35%;
+  }
+
+  #card-holder {
+    position: absolute;
+    font-size: 25px;
+    top: 80%;
+    margin-right: 160px;
+  }
+
+  #card-expiry {
+    position: absolute;
+    font-size: 20px;
+    top: 83%;
+    margin-left: 265px;
+  }
+
+  #card-logo {
+    position: absolute;
+    width: 65px;
+    top: 10%;
+    margin-right: 265px;
+  }
+
+  .input-div {
+    width: 80vw;
+    margin: 500px auto;
+  }
+}
+/* 
+@media screen and (min-width:1000px) {
+  .background-img {
+    width: 100vw;
+    height: 40vh;
+    transition: width 0.5s ease-in-out;
+  }
+} */
+
+@media screen and (min-width: 1100px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: block;
+  }
+  .background-img {
+    width: 30vw;
+    height: 100vh;
+    transition: height 0.5s ease-in-out;
+  }
+
+  .back-card {
+    position: absolute;
+    width: 100vw;
+    left: -25vw;
+    top: 45vh;
+  }
+
+  .back-card img {
+    height: 250px;
+    width: 400px;
+  }
+
+  #card-cvc {
+    position: absolute;
+    font-size: 25px;
+    top: 42.5%;
+    padding-left: 260px;
+  }
+
+  .front-card {
+    position: absolute;
+    height: 100vh;
+    top: -70px;
+    left: -26vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .front-card img {
+    height: 250px;
+    width: 400px;
+  }
+
+  #card-number {
+    position: absolute;
+    font-size: 30px;
+    top: 47.5%;
+  }
+
+  #card-holder {
+    position: absolute;
+    margin-left: -10px;
+    font-size: 25px;
+    top: 60%;
+  }
+
+  #card-expiry {
+    position: absolute;
+    margin-left: 300px;
+    font-size: 25px;
+    top: 60%;
+  }
+
+  #card-logo {
+    position: absolute;
+    height: 40px;
+    margin-left: -40px;
+    top: 36.5%;
+  }
+
+  .input-div {
+    position: absolute;
+    font-size: 22.5px;
+    width: 50vw;
+    margin-top: 25vh;
+    margin-left: 45vw;
+    top: 0vh;
+  }
+}

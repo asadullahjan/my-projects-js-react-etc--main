@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../live user filer"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "content placeholder"
+	}
+}

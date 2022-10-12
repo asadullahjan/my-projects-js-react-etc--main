@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../5 js projects/vertical slider"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "interactive-card-details-form-main"
+	}
+}

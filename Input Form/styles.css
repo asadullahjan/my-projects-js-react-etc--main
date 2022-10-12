@@ -1,0 +1,127 @@
+
+/* --color-darkblue: #1b1b32 ;
+--color-darkblue-alpha: rgba(27, 27, 50, 0.8); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:  rgba(27, 27, 50, 0.8);;
+}
+
+.container {
+  width: 600px;
+  margin: 3rem auto;
+  border-radius: 20px;
+}
+
+@media screen and (max-width : 600px) {
+  .container {
+    width: 500px;
+  }
+}
+@media screen and (max-width : 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+header{
+  text-align: center;
+  color: rgb(197, 203, 203);
+}
+
+#main-title {
+  font-family: 'Aref Ruqaa Ink', serif;
+  text-decoration: underline;
+}
+
+#main-description {
+  font-family: 'Aref Ruqaa Ink', serif;
+  margin-top: 10px;
+  word-spacing: 1px;
+  font-size: large;
+}
+
+.survey-form{
+  background-color: #1b1b32;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+  color: rgb(197, 203, 203);
+  font-size: larger;
+}
+
+.form-div{
+  display: block;
+  width: 100%;
+  margin: 0.5rem auto;
+}
+
+#name-label,
+#email-label,
+#number-label {
+  display: block;
+}
+
+.form-input {
+  display: block;
+  font-size: medium;
+  margin: 5px 0 0 0;
+  padding: 15px 15px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgb(197, 203, 203);
+}
+
+.small-fontAref {
+  font-family: 'Aref Ruqaa Ink', serif;
+  font-size: small;
+}
+
+.user-recomend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.user-recomend input {
+  margin-right: 10px;
+}
+
+.survey-form p {
+  margin: 15px 0;
+  font-family: 'Aref Ruqaa Ink', serif;
+}
+
+textarea {
+  padding: 10px 10px;
+  font-size: large;
+  background-color: rgb(197, 203, 203);
+  width: 100%;
+  min-height: 120px;
+  resize: vertical;
+  border-radius : 2px;
+}
+
+#submit {
+  width: 100%;
+  padding: 10px 0;
+  font-size: larger;
+  border-radius: 5px;
+  background-color: rgb(197, 203, 203);
+  cursor: pointer;
+  border : none;
+  margin-top: 20px;
+}
+
+#submit:hover {
+  transition: background-color 1s;
+  background-color: black;
+  color: rgb(197, 203, 203);
+}
+
+
