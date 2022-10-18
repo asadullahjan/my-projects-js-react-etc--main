@@ -36,7 +36,7 @@ const App = () => {
         placeholder="serach monsters"
         className="monster-search-box"
       />
-      <CardList monsters={filteredMonsters} />
+      <CardList monsters={filteredMonsters}  />
     </div>
   );
 };
