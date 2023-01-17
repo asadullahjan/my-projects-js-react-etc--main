@@ -1,6 +1,8 @@
 import { async } from "@firebase/util";
 import { useState } from "react";
 import FormInput from "../form-input/form-input.component";
+import '../sig-up-form/sign-up.styles.scss';
+import Button from "../button/button.component";
 
 
 import {
@@ -93,7 +95,7 @@ const SignUpForm = () => {
           value={confirmPassword}
         />
 
-        <button type="submit">Sign up</button>
+        <Button  buttonType=""type="submit">Sign up</Button>
       </form>
     </div>
   );
