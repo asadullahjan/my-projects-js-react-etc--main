@@ -3,6 +3,8 @@ import {Routes, Route} from 'react-router-dom';
 import NavigationBar from "./routes/navigation-bar/navigation-bar.component";
 import Authentication from "./routes/authentication/authentication.component";
 
+
+
 const Shop = () => {
   return (
     <h1>This is shop page</h1>
