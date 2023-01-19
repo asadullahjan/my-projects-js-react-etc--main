@@ -32,7 +32,7 @@ const NavigationBar = () => {
               SIGN IN
             </Link>
           )}
-          <Link className="nav-link" to=""><CartIcon/></Link>
+          <Link className="nav-link" to="/auth"><CartIcon/></Link>
         </div>
         {isCartOpen && <CartDropdown/>}
       </div>
