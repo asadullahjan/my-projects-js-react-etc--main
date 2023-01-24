@@ -20,17 +20,18 @@
   .quantity,
   .price {
     width: 23%;
+    padding: 0px 15px;
   }
 
   .quantity {
     display: flex;
-
+    margin-left: 15px;
     .arrow {
       cursor: pointer;
     }
 
     .value {
-      margin: 0 10px;
+      margin: 0 15px;
     }
   }
 

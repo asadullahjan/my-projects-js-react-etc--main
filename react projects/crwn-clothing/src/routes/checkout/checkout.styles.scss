@@ -8,13 +8,14 @@
 
   .checkout-header {
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 0px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid darkgrey;
 
     .header-block {
       text-transform: capitalize;
+      margin: 10px 15px;
       width: 23%;
 
       &:last-child {

@@ -28,20 +28,23 @@ const addCartItem = (cartItems, productToAdd) => {
   return [...cartItems, { ...productToAdd, quantity: 1 }];
 };
 
+
+
 export const CartContext = createContext({
   isCartOpen: false,
   setIsCartOpen: () => {},
   cartItems: [],
   addItemToCart: () => {},
+  RemoveItemFromCart:()=>{},
   cartCount: 0,
   setCartCount: () => {}
 });
 
 export const CartProvider = ({ children }) => {
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const [cartItems, setCartItem] = useState([]);
+  const [cartItems, setCartItem ] = useState([]);
   const [cartCount, setCartCount] = useState(0);
-
+        
   const addItemToCart = (productToAdd) => {
     setCartCount(cartCount+1);
     setCartItem(addCartItem(cartItems, productToAdd));
